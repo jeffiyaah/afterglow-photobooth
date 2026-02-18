@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AfterGlow Photobooth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- =====================
+     INTRO SCREEN
+     ===================== -->
+<div id="intro">
+
+  <!-- Curved Tagline -->
+  <svg class="tagline-curve" width="300" height="150" viewBox="0 0 300 150">
+    <defs>
+      <path id="taglinePath" d="M 40 120 A 110 110 0 0 1 260 120" />
+    </defs>
+    <text>
+      <textPath href="#taglinePath" startOffset="50%" text-anchor="middle">
+        captured, then felt
+      </textPath>
+    </text>
+  </svg>
+
+  <!-- Logo -->
+  <img src="assets/assets.png" class="intro-logo" alt="AfterGlow Logo" />
+
+  <!-- Brand -->
+  <h1 class="brand">
+    <span class="after">After Glow</span><br />
+    <span class="photo">PHOTOBOOTH</span>
+  </h1>
+
+  <!-- Credit -->
+  <div class="credit">
+    
+  </div>
+
+</div>
+
+<!-- =====================
+     CAMERA APP
+     ===================== -->
+<div class="app hidden" id="app">
+
+  <div class="filter-bar">
+    <button data-filter="normal">📷</button>
+    <button data-filter="bw">🤍</button>
+    <button data-filter="softGlow">✨</button>
+    <button data-filter="retroWhite">🕊️</button>
+    <button data-filter="vintageWhite">📼</button>
+    <button data-filter="modern">🌿</button>
+  </div>
+
+  <div class="camera-wrapper">
+    <video id="video" autoplay playsinline></video>
+    <div id="countdown">3</div>
+    <div id="captureHint"></div>
+  </div>
+
+  <div class="controls">
+    <button id="captureBtn">Capture</button>
+  </div>
+
+  <button id="nextBtn">Next → Customize</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

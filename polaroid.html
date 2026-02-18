@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Customize Polaroid</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="polaroid-app">
+
+  <!-- LEFT : PREVIEW -->
+  <div class="preview-section">
+    <canvas id="polaroidCanvas"></canvas>
+  </div>
+
+  <!-- RIGHT : CONTROLS -->
+  <div class="side-panel">
+
+    <!-- CAPTION -->
+    <input
+      id="captionInput"
+      
+
+      placeholder="write something cute ✿"
+    />
+    
+<div class="caption-presets">
+  <button data-text="forever us 💌">forever us</button>
+  <button data-text="today felt soft ☁️">today felt soft</button>
+  <button data-text="memory unlocked ✨">memory unlocked</button>
+  <button data-text="💫">💫</button>
+</div>
+
+    <!-- PAPER -->
+    <div class="section">
+  <h4>Paper</h4>
+  <div class="polaroid-style">
+    <button data-paper="white">🤍</button>
+    <button data-paper="blush">🌸</button>
+    <button data-paper="cream">🧁</button>
+    <button data-paper="lavender">💜</button>
+    <button data-paper="mint">🌿</button>
+    <button data-paper="sky">💎</button>
+  </div>
+</div>
+
+
+<div class="section">
+  <h4>Stickers</h4>
+  <div class="sticker-style">
+    <button data-sticker="none">❌</button>
+    <button data-sticker="🌸">🌸</button>
+    <button data-sticker="✨">✨</button>
+    <button data-sticker="💖">💖</button>
+    <button data-sticker="🦋">🦋</button>
+    <button data-sticker="🍓">🍓</button>
+  </div>
+</div>
+
+<div class="section">
+  <h4>Options</h4>
+  <label class="date-toggle">
+    <input type="checkbox" id="dateToggle" checked />
+    Show date
+  </label>
+</div>
+
+    <!-- STICKERS (UI only for now) -->
+    
+<div class="section">
+  <h4>Background</h4>
+  <div class="bg-style">
+    <button data-bg="cloud">☁️</button>
+    <button data-bg="blush">🌸</button>
+    <button data-bg="matcha">🌿</button>
+    <button data-bg="night">🌙</button>
+  </div>
+</div>
+
+    <!-- ACTIONS -->
+    <button id="backBtn" class="secondary-btn">
+      ← Back to Camera
+    </button>
+
+    <button id="downloadBtn" class="download-btn">
+      Download
+    </button>
+
+  </div>
+
+</div>
+
+<script src="polaroid.js"></script>
+</body>
+</html>
